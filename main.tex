@@ -1,0 +1,413 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1 \hfill #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Amir Mohammad Ezzati} \\ \vspace{2pt}
+    \faMapMarker{ Department of Computer Engineering, Sharif University of Technology, Tehran, Iran}  
+    \small \raisebox{-0.1\height}\faPhone\ +98 935 250 75 22
+    \\ \vspace{1pt}
+     ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{iamirezzati@gmail.com}} ~ 
+    \href{https://linkedin.com/in/amirezzati}{\raisebox{-0.2\height}\faLinkedin\ \underline{amirezzati}}  ~
+    \href{https://github.com/amirezzati}{\raisebox{-0.2\height}\faGithub\ \underline{amirezzati}} ~
+    \href{https://amirezzati.com}{\raisebox{-0.2\height}\faLink\ \underline{amirezzati.com}}
+    % \faLink\underline{ amirezzati.com}
+    \vspace{-8pt}
+\end{center}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
+%     \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
+%     \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+%     \href{https://github.com/...}{\underline{github.com/jake}}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sharif University of Technology}{Tehran, Iran}
+      {M.S. in Computer Engineering, Minor in Artificial Intelligence and Bioinformatics}{Sep 2023 -- Present} \\ \vspace{5pt}
+      \resumeItemListStart
+        \resumeItem{GPA: 18.47/20 (4.0/4.0)}{}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Guilan}{Rasht, Iran}
+      {B.S. in Computer Engineering}{Sep 2019 -- Aug 2023} \\ \vspace{5pt}
+      \resumeItemListStart
+        \resumeItem{GPA: 19.26/20 (3.91/4.0)}{}
+        \resumeItem{Rank 2 among 68 students of the 2019 computer engineering entries.}{}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Research Interest}
+    \begin{multicols}{2}
+        \begin{itemize}[leftmargin=0.30in, label={\faAngleRight}, itemsep=0pt, parsep=0pt]
+            \item\small Machine Learning
+            \item Deep Learning
+            \item Computer Vision
+            \item Medical Image Analysis
+            \item OOD Generalization
+            \item Self Supervised Learning
+            \item Machine Learning Safety
+        \end{itemize}
+    \end{multicols}
+            
+    % \begin{itemize}[leftmargin=0.30in, label={\faAngleRight}]
+    %     \small{\item{
+    %      \textbf{Machine Learning}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{Deep Learning}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{Computer Vision}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{Medical Image Analysis}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{OOD Generalization}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{Self Supervised Learning}
+    %     }} \vspace{-5pt}
+    %     \small{\item{
+    %      \textbf{Machine Learning Safety}
+    %     }} \vspace{-5pt}
+
+    % \end{itemize} \vspace{-5pt}
+    % \vspace{-16pt}
+         
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Relevant Coursework}{}
+            {}{}
+            \vspace{-10pt}
+            \begin{multicols}{2}
+                \begin{itemize}[itemsep=0pt, parsep=0pt]
+                    \item\small Deep Learning
+                    \item Machine Learning
+                    \item Natural Language Processing
+                    \item Intelligent Analysis of Biomedical Images
+                    \item Security and Privacy of Machine Learning
+                    \item Artificial Intelligence
+                \end{itemize}
+            \end{multicols}
+            \vspace*{1.0\multicolsep}
+    \resumeSubHeadingListEnd
+
+    
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graduate Research Assistant}{Sharif University of Technology}
+      {Robust and Interpretable Machine Learning lab(RIML lab)}{Sep 2023 - Present} \\ \vspace{8pt}
+
+      Superviser: \href{https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en}{Dr. MH Rohban}
+      \resumeItemListStart
+        \resumeItem{Out-of-Distribution generalization in histopathology images} {}
+        \resumeItem{Osteoporosis risk factors estimation} {Collaboration with  Tehran University of Medical Sciences}
+        \resumeItem{Renal cancer detection and classifying type of tumors} {Collaboration with Iran University of Medical Sciences}
+      \resumeItemListEnd
+
+    \vspace{10pt}
+    \resumeSubheading
+      {Undergraduate Research Assistant}{University of Guilan}
+      {Machine Learning reseaarcher}{Oct 2022 - Oct 2023} \\ \vspace{8pt}
+
+      Supervisor: \href{https://scholar.google.com/citations?user=WGH3eIsAAAAJ&hl=en}{Dr. SA Mirroshandel}
+      \resumeItemListStart
+        \resumeItem{Data-Efficient human sperm abnormality detection using Uncertainty Sampling(Active Learning)}{}
+        \resumeItem{Human sperm abnormality detection using
+            Meta-Learning(MAML approach)}{}
+        \resumeItem{Producing the plural of Arabic singular words}{}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TEACHING EXPERIENCE-----------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Sharif University of Technology}{}
+        {Teaching Assistant}{} 
+
+        \resumeItemListStart
+        \resumeItem{Machine Learning}{Dr. Sharifi Zarchi --- Fall 2024}
+        \resumeItem{Intelligent Analysis of Biomedical Images}{Dr. Rohban --- Fall 2024}
+        \resumeItemListEnd
+
+    \vspace{5pt}
+    \resumeSubheading
+        {University of Guilan}{}
+        {Teaching Assistant}{} 
+
+        \resumeItemListStart
+        \resumeItem{Microelectronic Circuits}{Dr. Aminian --- Winter 2023}
+        \resumeItem{Artificial Intelligence}{Dr. Boreshban --- Fall 2022}
+        \resumeItem{Digital Circuits}{Dr. Aminian --- Fall 2022}
+        \resumeItem{Advanced Programming (in Java)}{Dr. Mirroshandel --- Winter 2022}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        
+        \resumeProjectHeading
+          {\textbf{Data-Efficient human sperm abnormality detection using Uncertainty Sampling}}{May 2024 - Sep 2024}
+          \resumeItemListStart
+            \resumeItem{(Active Learning)}{}
+            \resumeItem{\href{https://github.com/amirezzati/}{\faGithub { GitHub}}}{}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Retrieval Augmented Generation with LLMs to Detect DSM-5 Disorders}}{July 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}{}
+            \resumeItem{\href{https://github.com/amirezzati/}{\faGithub { GitHub}}}{}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Brain MRI Segmentation using Diffusion Probabilistic Model}}{Feb 2024}
+          \resumeItemListStart
+            \resumeItem{This project implements a DPM-based model for brain tumor segmentation over MRI images based on "MedSegDiff: Medical Image Segmentation with Diffusion Probabilistic Model" paper.}{}
+            \resumeItem{\href{https://github.com/amirezzati/iabi/blob/main/homeworks/HW6/pract/DDPM_MRI_Seg.ipynb}{\faGithub { GitHub}}}{} 
+          \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        %   {\textbf{Segmentation of 3D Volumetric CT-Scan Images}}{Jan 2024}
+        %   \resumeItemListStart
+        %     \resumeItem{This notebook focuses on using from-scratch 2D-UNet and 3D-UNet models for segmentation of 3D volumetric medical images, with a comparison of their segmentation performance.}{}
+        %     \resumeItem{\href{https://github.com/amirezzati/iabi/blob/main/homeworks/HW5/pract/Segmentation/HW5_Segmentation.ipynb}{\faGithub { GitHub}}}{}
+        %   \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Graph-Level Classification of Histopathology Images using Graph Neural Network}}{Dec 2023}
+          \resumeItemListStart
+            \resumeItem{This project implements nuclei extraction from histopathology images, a GCN model for node embeddings, and a GCN-based graph prediction model with global pooling for graph-level embeddings.}{}
+            \resumeItem{\href{https://github.com/amirezzati/iabi/blob/main/homeworks/HW4/pract/HW4_GNN.ipynb}{\faGithub { GitHub}}}{}   
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Breast Cancer Classification using Multiple Instance Learning}}{Dec 2023}
+          \resumeItemListStart
+            \resumeItem{This project employs an attention-based deep multiple instance learning architecture to classify and localize histopathology images at different magnification levels as benign or malignant tumors.}{}
+            \resumeItem{\href{https://github.com/amirezzati/iabi/blob/main/homeworks/HW4/pract/HW4_MIL.ipynb}{\faGithub { GitHub}}}{}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Human Sperm Abnormality Detection using Meta-Learning}}{Jun 2023 - Dec 2023}
+          \resumeItemListStart
+            \resumeItem{This project uses the MAML algorithm with Learn2Learn and PyTorch to create a meta-learning model that performs well on three tasks: sperm head, acrosome, and vacuole abnormality detection.}{}
+            \resumeItem{\href{https://github.com/amirezzati/sperm-abnormality-detection-using-maml}{\faGithub { GitHub}}}{}
+          \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+     \textbf{Programming Languages}{: Python, Java, C++, PHP, SQL (Postgres)} \\
+     \textbf{ML Frameworks}{: PyTorch, TensorFlow, Scikit-learn, Keras} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Seaborn, OpenCV, librosa, Hugging Face} \\
+     \textbf{Developer Tools}{: Git, Github, VS Code, Google Colab, Kaggle, Visual Studio, PyCharm, IntelliJ} \\
+     \textbf{Web Development}{: Django, Laravel, React, HTML/CSS, JavaScript} \\
+     }}
+ \end{itemize}
+
+
+%-----------Honors and Awards-----------
+\section{Honors and Awards}
+    \resumeSubHeadingListStart
+    
+    \resumeSubheading
+        {Highly Ranked in Bachelor of Computer Engineering}{July 2023}
+        {}{}
+        \vspace{-15pt}
+        \resumeItemListStart
+        \resumeItem{Highly ranked among 68 students of the 2019 computer engineering entries at University of Guilan}{}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+        {Highly Talented Student Admission}{Apr 2023}
+        {}{} 
+        
+        \vspace{-15pt}
+        \resumeItemListStart
+        \resumeItem{I was admitted to the Master’s degree program in Computer Engineering with a focus on Artificial Intelligence and Bioinformatics at Sharif University of Technology. I was also accepted into other programs and universities but withdrew due to my strong passion for this field.}{}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Tuition Waiver, B.Sc, University of Guilan}{Sep 2019}
+        {}{}
+        \vspace{-15pt} 
+        
+    \resumeSubHeadingListEnd
+
+
+   %-----------Certifications-----------
+\section{Certifications}
+
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Deep Learning }$|$ Stanford University and DeepLearning.AI $|$ \href{https://coursera.org/verify/specialization/2XQLDRPCD5RJ}{\faLink { Verification}}}{Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Instructor: Andrew Ng}{}
+            % \resumeItem{}{}
+          \resumeItemListEnd
+        
+        \vspace{-5pt}
+        \resumeProjectHeading
+          {\textbf{Reinforcement Learning }$|$ University of Alberta $|$ \href{https://www.coursera.org/verify/7A69WNEQFX6Q}{\faLink { Verification}} }{Sep 2022}
+          \resumeItemListStart
+            \resumeItem{Instructor: Martha White, Adam White}{}
+            % \resumeItem{}{}
+          \resumeItemListEnd
+
+        \vspace{-5pt}
+        \resumeProjectHeading
+          {\textbf{Machine Learning }$|$ DeepLearning.AI $|$ \href{https://www.coursera.org/verify/specialization/Q3SLD7LMZHHN}{\faLink { Verification}} }{Sep 2022}
+          \resumeItemListStart
+            \resumeItem{Instructor: Andrew Ng}{}
+            % \resumeItem{}{}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------References-----------
+% \section{References}
+
+%-------------------------------------------
+\end{document}
